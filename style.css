@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #838bda;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 90px;
+    width:120vh;
+    margin: 80px auto;
+    background:rgb(12, 12, 12);
+    border: 3px solid black;
+    padding: 20px 0 50px 0;
+}
+#text-area{
+    font-size: 20px;
+    background-color: #ffffff;
+    height: 120px;
+    width: 100%;
+    outline: none;
+    /* padding: 10px; */
+    border: none;
+    resize: none;
+}
+
+.typedtext {
+ width: 500px;
+ /* height: 300px; */
+ padding:50px 0;
+ color: blanchedalmond;
+ 
+}
+.typedtext p{
+
+    font-family: cursive;
+}
+.typedtext p span{
+    position: relative;
+}
+.typedtext p span.correct{
+    color: rgb(7, 255, 7);
+}
+.typedtext p span.incorrect{
+    color: red;
+    background-color: salmon;
+    outline: royalblue;
+    /* border-radius: px; */
+}
+.typedtext p span.active{
+    color: skyblue;
+    
+}
+.typedtext p span.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    opacity: 0;
+    width: 100%;
+    background: skyblue;
+    animation: blink 1s ease-in-out infinite;
+}
+.btn button{
+font-size: 18px;
+margin: 0 20px;
+padding: 5px 10px;
+cursor: pointer;
+}
+@keyframes blink{
+  50%{
+      opacity: 1;
+  }
+}
+
+.show {
+    display: flex;
+    /* flex-wrap: wrap; */
+    color: blanchedalmond;
+    gap: 80px;
+}
+.show div{
+    gap: 40px;
+}
